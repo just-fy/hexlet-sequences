@@ -4,7 +4,7 @@
 // Реализовать функции cons, car, cdr в соответствии с этим алгоритмом
 
 // BEGIN (write your solution here)
-const count = (base, num) => {
+const counting = (base, num) => {
   const iter = (value, acc) => {
     if (value % base !== 0) {
       return acc;
@@ -16,6 +16,6 @@ const count = (base, num) => {
 };
 
 export const cons = (a, b) => (2 ** a) * (3 ** b);
-export const car = pair => count(2, pair);
-export const cdr = pair => count(3, pair);
+export const car = pair => counting(2, pair);
+export const cdr = pair => counting(3, pair);
 // END
